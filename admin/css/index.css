@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+*{
+  margin:0px;
+  padding:0px;
+  color:#676767;
+	font-size:12px;
+	font-family: "Jeju Gothic",sans-serif;
+}
+div{
+  height:100%;
+  display:inline-block;
+  border:1px solid grey;
+  position:fixed;
+}
+span{
+  display: block;
+  margin: 20px;
+  margin-left: 30%;
+}
+#menu{
+  width:200px;
+}
+#content{
+  width:100%;
+}
+#content_frame{
+  width:100%;
+  height:100%;
+}
+img{
+	border-radius: 30px;
+  padding: 10px;
+  background-color: #e9e9e9;
+	display: inline-block;
+}
+table {
+    border-collapse: collapse;
+    width: 80%;
+    position:absolute;
+    left:0px;
+}
+tr{
+	height:30px;
+}
+th, td {
+    text-align: center;
+    font-size:15px;
+}
+tr:nth-child(even){background-color: #fffdf9}
+textarea{
+  width:100%;
+  height:30px;
+}
+#content_text{
+  width: 80%;
+  height: 120px;
+  position: relative;
+}
