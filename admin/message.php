@@ -12,7 +12,7 @@
   <h1 style="font-size:40px">공지글</h1>
   <h2>40자를 안넘기는 것이 줄바꿈이 생기지 않아 보기 좋습니다.</h2>
   <input id=message style="width:500px;"><button onclick="update_message()">등록</button>
-  <h1 style="font-size:40px">URL</h1>
-  <input id=url style="width:500px;"><button onclick="update_message()">등록</button>
+  <!--<h1 style="font-size:40px">URL</h1>
+  <input id=url style="width:500px;"><button onclick="update_message()">등록</button>-->
 </body>
 </html>

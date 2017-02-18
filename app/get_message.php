@@ -8,9 +8,9 @@
 
   $query="select * from dalgona_message";
   $ret=mysqli_query($conn,$query);
-
+  //onclick='move_page(\"".$row[2]."\")'
   while($row=mysqli_fetch_row($ret)){
-    echo "<div style=\"margin-top:7px;\" onclick='move_page(\"".$row[2]."\")'>
+    echo "<div style=\"margin-top:7px;\">
       <p style=\"float:left\">공지</p>
       <p id=\"notice_text\">".$row[1]."</p>
     </div>";
