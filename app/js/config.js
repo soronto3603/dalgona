@@ -49,7 +49,7 @@ function update_nickname(){
   var name=document.getElementById('name').value;
   id=document.getElementById('id').value;
   if(name==old_name){
-    var json='{"title":"alert","alert":"성공적으로 저장하였습니다."}';
+    var json='{"title":"alert","alert":"변경사항이 없습니다."}';
     window.parent.postMessage(json,"*");
     cancle();
   }else{
@@ -59,7 +59,9 @@ function update_nickname(){
   	},function(data,status){
       var json='{"title":"alert","alert":"'+data+'"}';
       window.parent.postMessage(json,"*");
-      cancle();
+      if(data=="성공적으로 적용 하였습니다."){
+        cancle();
+      }
   	});
   }
 }

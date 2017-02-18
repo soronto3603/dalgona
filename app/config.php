@@ -18,22 +18,16 @@
   <div id=exit_modal class=modal onclick="close_modal();">
 		<div class="modal-content" style="padding:10px;height:100px;font-size:12px;">
       <center style="margin-top:20px;">
-			<p style="text-align:center;font-size:15px;bottom:0px;color:black">회원탈퇴를 하시겠습니까?</p>
-      <div class="btn" onclick="exit_user();" style="background-color:#f88978;border:0.1px solid #f88978"><center><p class="btn_text">회원탈퇴</p></center></div>
-      <div class="btn" onclick="close_modal();" style="border:0.1px solid #9e9e9e"><center><p class="btn_text">아니오</p></center></div>
+			<p style="text-align:center;font-size:15px;bottom:0px;color:#676767">회원탈퇴를 하시겠습니까?</p>
+      <div class="btn" onclick="exit_user();" style="background-color:#f88978;border:0.1px solid #f88978"><center><p class="btn_text" style="color:#f9f9f9">회원탈퇴</p></center></div>
+      <div class="btn" onclick="close_modal();" style="border:0.1px solid #9e9e9e"><center><p class="btn_text" style="color:#676767">아니오</p></center></div>
       </center>
     </div>
 	</div>
   <div id=header>
-    <p id=header_title>우리들의 달콤한 고민 나누기</p>
+    <p id=header_title>개인정보</p>
   </div>
   <div id=content>
-    <div id=line>
-      <center>
-        <img src="img/lock.png">
-        <p style="margin-right: 20px;">개인정보</p>
-      </center>
-    </div>
     <div id=line>
       <center>
         <h3 style="position: relative;top:2px;left: 5px;">성별</h3>
@@ -52,17 +46,11 @@
         <div id=sex class="sex" style="background-color:white;position: relative;right: 5px;"><input id=name class="uy_input" type="text"></div>
       </center>
     </div>
-    <div id=line>
-      <center>
-        <div id=exit style="margin-left:17px" onclick="document.getElementById('exit_modal').style.display='block'">
-          <h3 style="color: #f9f9f9;font-size: 12px;position: relative;top: 10px;left: 12px;">회원탈퇴</h3>
-        </div>
-      </center>
-    </div>
   </div>
   <center>
-    <button class="w3-btn confirm" type="submit" style="background-color:#f88978" onclick="update_nickname()">완료</button>
-    <button class="w3-btn confirm" type="submit" style="margin-left:50%" onclick="cancle()">취소</button>
+    <button class="w3-btn confirm" type="submit" style="background-color:#f88978" onclick="update_nickname()">적용</button>
+    <button class="w3-btn confirm" type="submit" style="margin-left:32.999%" onclick="document.getElementById('exit_modal').style.display='block'">회원탈퇴</button>
+    <button class="w3-btn confirm" type="submit" style="margin-left:65.999%;background-color:#bdbdbd;width:34%;" onclick="cancle()">취소</button>
   </center>
 </body>
 <script type="text/javascript" src="js/config.js"></script>

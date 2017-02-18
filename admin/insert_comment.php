@@ -9,7 +9,7 @@
 
   $conn=mysqli_connect($db_host,$db_user,$db_passwd,$db_name);
 
-  echo $query="insert into dalgona_comment values($no,'$writer','$sex','$comment','$flag','$time',NULL)";
+  $query="insert into dalgona_comment values($no,'$writer','$sex','$comment','$flag','$time',NULL)";
   $ret=mysqli_query($conn,$query);
 
   //while($row=mysqli_fetch_row($ret)){}

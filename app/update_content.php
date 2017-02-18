@@ -23,6 +23,8 @@
     $sex=$row[1];
   }
 
+  $content=str_replace("\n","<br>",$content);
+
   $query="insert into dalgona_content values(NULL,'$title','$theme','$time','$content','$nickname',0,0,$flag,'$sex')";
   $ret=mysqli_query($conn,$query);
 

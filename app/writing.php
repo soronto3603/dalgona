@@ -21,9 +21,9 @@
   <div id=exit_modal class=modal onclick="document.getElementById('exit_modal').style.display='none';">
 		<div class="modal-content" style="padding:10px;height:100px;font-size:12px;">
       <center style="margin-top:20px;">
-			<p style="text-align:center;font-size:15px;bottom:0px;color:black">이전화면으로 가시겠습니까?</p>
-      <div class="btn" onclick="cancle();" style="background-color:#f88978;border:0.1px solid #f88978"><center><p class="btn_text">네</p></center></div>
-      <div class="btn" onclick="document.getElementById('exit_modal').style.display='none';" style="border:0.1px solid #9e9e9e"><center><p class="btn_text">아니오</p></center></div>
+			<p style="text-align:center;font-size:15px;bottom:0px;color:#676767">이전화면으로 가시겠습니까?</p>
+      <div class="btn" onclick="cancle();" style="background-color:#f88978;border:0.1px solid #f88978"><center><p class="btn_text" style="color:#f9f9f9">네</p></center></div>
+      <div class="btn" onclick="document.getElementById('exit_modal').style.display='none';" style="border:0.1px solid #9e9e9e"><center><p class="btn_text" style="color:#676767">아니오</p></center></div>
       </center>
     </div>
 	</div>

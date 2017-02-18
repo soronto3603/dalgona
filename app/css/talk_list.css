@@ -80,9 +80,10 @@ p{
 #icon{
 	border-radius:50px;
 	background-color:#f88978;
-	width:30px;
-	height:30px;
-	padding:10px;
+  width: 25px;
+  height: 25px;
+  padding: 13px;
+  box-shadow: 2px 5px 10px #888888;
 }
 #theme{
 	width:30px;

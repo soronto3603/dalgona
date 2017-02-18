@@ -80,6 +80,11 @@ function update_comment(){
   flag=document.getElementById('flag').value;
   read=document.getElementById('read').value;
   var comment=document.getElementById('comment_input').value;
+  if(comment==""){
+    var json='{"title":"alert","alert":"내용을 입력해주세요."}';
+    window.parent.postMessage(json,"*");
+    return;
+  }
   $.post("update_comment.php",{
     read:read,
     comment:comment,

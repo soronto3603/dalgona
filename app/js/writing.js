@@ -12,13 +12,7 @@ window.onmessage=function(e){
     document.getElementById('select_theme').style.display="none";
   }
   else if(j.title=="backkey_down"){
-    if(document.getElementById('exit_modal').style.display=="block"){
-      document.getElementById('exit_modal').style.display="none";
-    }else if(document.getElementById('select_theme').value.display=="block"){
-      document.getElementById('select_theme').value.display="none";
-    }else{
-      document.getElementById('exit_modal').style.display="block";
-    }
+    document.getElementById('exit_modal').style.display="block";
   }
 }
 function update_content(){
@@ -28,6 +22,21 @@ function update_content(){
   var content=document.getElementById('text').value;
   var writer=document.getElementById('id').value;
   var flag=document.getElementById('flag').value;
+  if(title==""){
+    var json='{"title":"alert","alert":"제목을 입력해주세요."}';
+    window.parent.postMessage(json,"*");
+    return;
+  }
+  if(theme=="선택"){
+    var json='{"title":"alert","alert":"테마를 선택해주세요."}';
+    window.parent.postMessage(json,"*");
+    return;
+  }
+  if(content==""){
+    var json='{"title":"alert","alert":"내용을 입력해주세요."}';
+    window.parent.postMessage(json,"*");
+    return;
+  }
   $.post("update_content.php",{
     title:title,
     theme:theme,

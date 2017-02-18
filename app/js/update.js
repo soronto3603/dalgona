@@ -6,7 +6,6 @@ function get_update_content(){
   $.post("get_update_content.php",{
     read:read
 	},function(data,status){
-    //alert(data);
     var j=JSON.parse(data);
     document.getElementById('title').value=j.title;
     document.getElementById('select_box_value').innerHTML=j.theme;
@@ -36,6 +35,21 @@ function update_content(){
   var writer=document.getElementById('id').value;
   var flag=document.getElementById('flag').value;
   read=document.getElementById('read').value;
+  if(title==""){
+    var json='{"title":"alert","alert":"제목을 입력해주세요."}';
+    window.parent.postMessage(json,"*");
+    return;
+  }
+  if(theme=="선택"){
+    var json='{"title":"alert","alert":"테마를 선택해주세요."}';
+    window.parent.postMessage(json,"*");
+    return;
+  }
+  if(content==""){
+    var json='{"title":"alert","alert":"내용을 입력해주세요."}';
+    window.parent.postMessage(json,"*");
+    return;
+  }
   $.post("update_old_content.php",{
     read:read,
     title:title,

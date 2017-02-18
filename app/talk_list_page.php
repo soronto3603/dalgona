@@ -38,9 +38,9 @@
   </table>
   <div id=icon_box>
     <img id=icon src="<?php if($_GET['sort']==""){echo "img/star.png";}else{echo "img/sort.png";}?>" onclick="change_sort()">
-    <span style="position: relative;bottom: 18px;left: 8px;color: #f9f9f9;"><?php if($_GET['sort']==""){echo "인기순";}else{echo "최신순";}?></span>
+    <span style="position: relative;bottom: 18px;left: 14px;color: #f9f9f9;font-size:7px"><?php if($_GET['sort']==""){echo "인기순";}else{echo "최신순";}?></span>
     <img id=icon style="margin-top:10px;" src="img/pen.png" onclick="make_content()">
-    <span style="position: relative;bottom: 18px;left: 8px;color: #f9f9f9;">글쓰기</span>
+    <span style="position: relative;bottom: 18px;left: 14px;color: #f9f9f9;font-size:7px">글쓰기</span>
   </div>
   <div id=ad_box>
 

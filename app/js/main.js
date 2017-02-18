@@ -29,7 +29,8 @@ function move_page(d){
     var json='{"title":"url","url":"http://total0808.cafe24.com/random_chat/app/wait.php?phone_number='+id+'"}';
     window.parent.postMessage(json,"*");
   }else if(d==4){
-    window.parent.postMessage("4gldksjfglsdk","*");
+    var json='{"title":"url","url":"http://total0808.cafe24.com/solo_back/app/index.php"}';
+    window.parent.postMessage(json,"*");
   }else if(d==5){
     window.parent.postMessage("sign_up","*");
   }else if(d==6){

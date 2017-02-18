@@ -23,6 +23,9 @@
     $nickname=$row[0];
     $sex=$row[1];
   }
+
+  $content=str_replace("\n","<br>",$content);
+
   $query="update dalgona_content set title='$title' , theme='$theme' , content='$content' , date='$time' where no=$read";
   $ret=mysqli_query($conn,$query);
 
