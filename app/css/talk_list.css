@@ -1,0 +1,148 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+*{
+	box-sizing:inherit;
+	font-family: "Noto Sans KR",sans-serif;
+  margin:0px;
+	font-size:12px;
+	color:#676767;
+}
+p{
+	display:inline;
+	margin-left:10px;
+}
+#ad_box{
+	width:100%;
+	height:60px;
+	position:fixed;
+	left:0px;
+	bottom:0px;
+}
+#header{
+	position:fixed;
+	top:0px;
+	box-shadow: 1px 1px 2px #888888;border:0.01px solid #e9e9e9;
+	border-right:none;
+	border-left:none;
+	border-bottom:none;width:100%;height:65px;background-color:white;margin-bottom:3px;
+}
+#header_title{
+	top:15px;color:#f9f9f9;text-align:left;margin:0px;position:relative;display:block;font-size:24px;
+  left:70px;
+}
+#header_background{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top:0px;
+}
+#header_dalgona{
+  position: fixed;
+  top: 0px;
+  width: 40px;
+  left: 10px;
+}
+#side_menu{
+	position:absolute;top:20px;right:10px;font-size:38px;
+	margin:0px;
+}
+#notice{
+	position:fixed;
+  height:50px;background-color:white;color:black;text-align:left;
+	border:0.1px solid #f1f1ef;
+	border-left:none;
+	border-right:none;
+	text-align:center;
+	top:65px;
+	width:100%;
+}
+#notice_text{
+	margin-left:10px;
+	color:#f9f9f9;
+	float:left;
+  font-size:12px;
+}
+#circle{
+	width:40px;
+	height:40px;
+	border-radius:20px;
+	display:block;
+	left:5px;
+}
+#circle_text{
+	margin: 0px;
+	display: inline-block;
+	margin-top: 14px;
+	color:#f9f9f9;
+}
+#content{
+  height:55px;
+	width:100%;
+	color:black;
+	text-align:left;
+	border:0.01px solid #e9e9e9;
+	border-right:none;
+	border-left:none;
+	border-bottom:none;
+}
+#side_menu{
+	position:absolute;top:20px;right:10px;font-size:38px;
+	margin:0px;
+}
+#icon_box{
+	width:50px;
+	position:fixed;
+	bottom:70px;
+	right:30px;
+}
+#icon{
+	width:70px
+}
+#theme{
+	width:30px;
+}
+#time{
+	float:right;
+	margin-top:10px;
+}
+.line{
+	display:inline;
+	width:100%;
+	height:20px;
+	font-size:16px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+tr{
+  height: 70px;
+  border: 1px solid #e9e9e9;
+  border-left: none;
+  border-right: none;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.charactor-size4{
+	font-size:14px;
+}
+.charactor-size8{
+	font-size:12px;
+}
+.charactor-size9{
+	font-size:12px;
+}
+.charactor-size12{
+	font-size:10px;
+}
+.charactor-size13{
+	font-size:9.5px;
+}
+.charactor-size16{
+	font-size:9.5px;
+}
+.charactor-size20{
+	font-size:9px;
+}
