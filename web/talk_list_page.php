@@ -55,6 +55,9 @@
   <div id=ad_box>
 
   </div>
+  <?php
+    include('ad_module.php');
+  ?>
 </body>
 <script type="text/javascript" src="js/talk_list.js"></script>
 </html>

@@ -53,7 +53,9 @@
 
 		//db에 저장할 정보 가져옴
 
-		$upload_filename = $_FILES['upload']['name'];
+		$file_time=date("His");
+
+		$upload_filename = str_replace(".","$file_time.",$_FILES['upload']['name']);
 		$file_size = $_FILES['upload']['size'];
 		$file_type = $_FILES['upload']['type'];
 		//echo "".$filePath.$fileName;
@@ -61,7 +63,7 @@
 	//if (move_uploaded_file($_FILES['upload']['tmp_name'], $filePath.$upload_filename)) {
 	if (move_uploaded_file($_FILES['upload']['tmp_name'], $filePath.$upload_filename)) {
 			}// 실질적으로 업로드 시키는 구문
-	
+
 	//$imgurl="./img/".$fileName;
 	$imgurl="http://total0808.cafe24.com/dalgona/admin/ad/".$upload_filename;
 	echo "<script>location.href=\"updateimg.php?url=$imgurl&no=$no\"</script>";

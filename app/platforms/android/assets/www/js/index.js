@@ -69,6 +69,7 @@ function get_sim_info_suc(result){
   //alert(result.phoneNumber);
   //document.getElementById('iframe').src="http://total0808.cafe24.com/dalgona/app/sign_up.php?phone_number="+result.phoneNumber;
   checkLoginStatus(function(e){
+    admob.interstitial.show();
     if(e){
       //alert('old');
       phon_n=result.phoneNumber;
@@ -162,6 +163,12 @@ function onResume(){
   iframe.contentWindow.postMessage(jsonData,"*");
 }
 var is_ad=0;
+function init_admob(){
+  admob.interstitial.config({
+   id: 'ca-app-pub-1542264535834690/6859608369',
+ });
+  admob.interstitial.prepare();
+}
 var app = {
     // Application Constructor
     initialize: function() {
@@ -178,7 +185,7 @@ var app = {
       document.addEventListener('backbutton',onBackKeyDown,false);
       document.addEventListener("resume", onResume, false);
       dbinit();
-
+      init_admob();
       requestReadPermission();
       //document.getElementById('iframe').src="http://total0808.cafe24.com/dalgona/app/main.php?login_status=0&id=0";
       window.onmessage=function(e){

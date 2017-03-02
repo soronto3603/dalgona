@@ -285,6 +285,27 @@ module.exports = [
         "clobbers": [
             "window.StatusBar"
         ]
+    },
+    {
+        "id": "cordova-promise-polyfill.Promise",
+        "file": "plugins/cordova-promise-polyfill/www/Promise.js",
+        "pluginId": "cordova-promise-polyfill",
+        "runs": true
+    },
+    {
+        "id": "cordova-promise-polyfill.promise.min",
+        "file": "plugins/cordova-promise-polyfill/www/promise.min.js",
+        "pluginId": "cordova-promise-polyfill"
+    },
+    {
+        "id": "cordova-plugin-admob-free.AdMob",
+        "file": "plugins/cordova-plugin-admob-free/www/admob.js",
+        "pluginId": "cordova-plugin-admob-free",
+        "clobbers": [
+            "admob",
+            "AdMob",
+            "plugins.AdMob"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -300,7 +321,10 @@ module.exports.metadata =
     "cordova-plugin-file": "4.3.1",
     "cordova-plugin-file-transfer": "1.6.1",
     "com.borismus.webintent": "1.0.0",
-    "cordova-plugin-statusbar": "2.2.1"
+    "cordova-plugin-statusbar": "2.2.1",
+    "cordova-promise-polyfill": "0.0.2",
+    "cordova-admob-sdk": "0.4.0",
+    "cordova-plugin-admob-free": "0.7.0"
 };
 // BOTTOM OF METADATA
 });

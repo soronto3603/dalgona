@@ -36,10 +36,19 @@
         },
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.hume.dalgona"
+        },
+        "cordova-plugin-admob-free": {
+            "PACKAGE_NAME": "com.hume.dalgona"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.hume.dalgona"
+        },
+        "cordova-promise-polyfill": {
+            "PACKAGE_NAME": "com.hume.dalgona"
+        },
+        "cordova-admob-sdk": {
             "PACKAGE_NAME": "com.hume.dalgona"
         }
     }

@@ -14,5 +14,7 @@ function move_page(n){
     document.getElementById('content_frame').src="ad.php";
   }else if(n==6){
     document.getElementById('content_frame').src="message.php";
+  }else if(n==7){
+    document.getElementById('content_frame').src="ad2.php";
   }
 }

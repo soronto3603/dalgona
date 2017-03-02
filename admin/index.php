@@ -14,6 +14,7 @@
     <span onclick="move_page(3);">댓글관리</span>
     <span onclick="move_page(4);">금칙어관리</span>
     <span onclick="move_page(5);">광고관리</span>
+    <span onclick="move_page(7);">전면광고</span>
     <span onclick="move_page(6);">공지관리</span>
   </div>
   <div id=content style="margin-left:210px;">
