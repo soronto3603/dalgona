@@ -1,8 +1,8 @@
 <?php
   $read=$_POST['read'];
-  $title=$_POST['title'];
+  $title=urlencode($_POST['title']);
   $theme=$_POST['theme'];
-  $content=$_POST['content'];
+  $content=urlencode($_POST['content']);
   $writer=$_POST['writer'];
   $flag=$_POST['flag'];
 

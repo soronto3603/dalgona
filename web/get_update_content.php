@@ -9,8 +9,8 @@
   $ret=mysqli_query($conn,$query);
 
   while($row=mysqli_fetch_row($ret)){
-    $content=str_replace("<br>","\\r\\n",$row[4]);
-    echo '{"title":"'.$row[1].'","theme":"'.$row[2].'","content":"'.$content.'"}';
+    $content=str_replace("<br>","\\r\\n",urldecode($row[4]));
+    echo '{"title":"'.urldecode($row[1]).'","theme":"'.$row[2].'","content":"'.$content.'"}';
   }
 
 

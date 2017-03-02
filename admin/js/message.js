@@ -4,7 +4,7 @@ function get_message(){
     //alert(data);
     var j=JSON.parse(data);
     document.getElementById('message').value=j.text;
-    document.getElementById('url').value=j.url;
+    //document.getElementById('url').value=j.url;
 	});
 }
 function init(){
@@ -13,10 +13,10 @@ function init(){
 window.onload=init();
 function update_message(){
   var message=document.getElementById("message").value;
-  var url=document.getElementById('url').value;
+  //var url=document.getElementById('url').value;
   $.post("update_message.php",{
-    message:message,
-    url:url
+    message:message
+    //url:url
 	},function(data,status){
     //alert(data);
     location.reload();

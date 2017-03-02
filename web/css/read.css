@@ -1,9 +1,9 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 *{
 	color:#676767;
 	font-size:12px;
-	font-family: "Jeju Gothic",sans-serif;
+	@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+	font-family: "Noto Sans KR",sans-serif;
 }
 p{
 	font-size:14px;
@@ -15,16 +15,31 @@ p{
 	box-shadow: 1px 1px 2px #888888;border:0.01px solid #e9e9e9;
 	border-right:none;
 	border-left:none;
-	border-bottom:none;width:100%;height:40px;background-color:white;margin-bottom:3px;
+	border-bottom:none;width:100%;height:65px;background-color:white;margin-bottom:3px;
 }
 #header_title{
-	top:14px;color:#676767;text-align:center;margin:0px;position:relative;display:block;font-size:12px;
+	top:15px;color:#f9f9f9;text-align:left;margin:0px;position:relative;display:block;font-size:24px;
+  left:70px;
 }
+#header_background{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+	left:0px;
+	top:0px;
+}
+#header_dalgona{
+  position: fixed;
+  top: 0px;
+  width: 40px;
+  left: 10px;
+}
+
 #time{
 	text-align:right;
 	color:#e9e9e9
 }
-img{
+#profile{
 	border-radius: 30px;
   padding: 10px;
   background-color: #e9e9e9;
@@ -68,6 +83,7 @@ tr:nth-child(even){background-color: #fffdf9}
 }
 #content_box{
 	margin:10px;
+	margin-top:70px;
 }
 #delete:hover{
 	background-color:#f9f9f9;

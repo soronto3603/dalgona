@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.hume.dalgona" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>dalgona</name>
+    <name>달고나</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>

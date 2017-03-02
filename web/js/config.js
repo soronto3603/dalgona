@@ -9,10 +9,10 @@ function get_user_info(){
     var j=JSON.parse(data);
     document.getElementById('age').value=j.age;
     if(j.sex=="여자"){
-      document.getElementById('sex').innerHTML="<h3 style='font-size:12px;margin:0px;margin-top:4px;position: relative;right: 2px;top: 3px;color: #f9f9f9;'>여자</h3>";
+      document.getElementById('sex').innerHTML="<h3 style='font-size:12px;margin:0px;margin-top:4px;position: relative;right: 2px;top: 5px;color: #f9f9f9;'>여자</h3>";
     }else{
-      document.getElementById('sex').style="padding: 5px;position: relative;left: 4px;background-color:#99bbf4;";
-      document.getElementById('sex').innerHTML="<h3 style='font-size:12px;margin:0px;margin-top:4px;position: relative;right: 2px;top: 3px;color: #f9f9f9;'>남자</h3>";
+      document.getElementById('sex').style="padding: 5px;position: relative;left: 4px;background-color:#4fb3ef;";
+      document.getElementById('sex').innerHTML="<h3 style='font-size:12px;margin:0px;margin-top:4px;position: relative;right: 2px;top: 5px;color: #f9f9f9;'>남자</h3>";
     }
     old_name=j.nickname;
     document.getElementById('name').value=j.nickname;

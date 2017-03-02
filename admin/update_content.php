@@ -10,6 +10,8 @@
 
   $conn=mysqli_connect($db_host,$db_user,$db_passwd,$db_name);
 
+  $content=str_replace("\n","<br>",$content);
+
   $query="update dalgona_content set title='$title',theme='$theme',date='$date',content='$content',writer='$writer',count='$count' where no=$no";
   $ret=mysqli_query($conn,$query);
 

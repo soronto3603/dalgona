@@ -49,6 +49,9 @@ function cancle(){
   flag=document.getElementById('flag').value;
   var json='{"title":"url","url":"http://total0808.cafe24.com/dalgona/app/talk_list_page.php?id='+id+'&flag='+flag+'"}';
   window.parent.postMessage(json,"*");
+  if(id=='운영자'){
+    window.open("about:blank","_self").close();
+  }
 }
 function delete_content(n){
   $.post("delete_content.php",{
@@ -58,11 +61,17 @@ function delete_content(n){
     window.parent.postMessage(json,"*");
     var json='{"title":"url","url":"http://total0808.cafe24.com/dalgona/app/talk_list_page.php?id='+id+'&flag='+flag+'"}';
     window.parent.postMessage(json,"*");
+    if(id=='운영자'){
+      location.reload();
+    }
 	});
 }
 function update_content(n){
-  var json='{"title":"url","url":"http://total0808.cafe24.com/dalgona/app/update.php?id='+id+'&flag='+flag+'&read='+n+'"}';
+  var json='{"title":"url","url":"http://total0808.cafe24.com/dalgona/app/writing.php?id='+id+'&flag='+flag+'&read='+n+'"}';
   window.parent.postMessage(json,"*");
+  if(id=='운영자'){
+    window.open('http://total0808.cafe24.com/dalgona/app/writing.php?id='+id+'&flag='+flag+'&read='+n);
+  }
 }
 function delete_comment(n){
   id=document.getElementById('id').value;
@@ -73,6 +82,9 @@ function delete_comment(n){
 	},function(data,status){
     var json='{"title":"url","url":"http://total0808.cafe24.com/dalgona/app/read.php?id='+id+'&flag='+flag+'&read='+read+'"}';
     window.parent.postMessage(json,"*");
+    if(id=='운영자'){
+      location.reload();
+    }
 	});
 }
 function update_comment(){
@@ -94,5 +106,8 @@ function update_comment(){
     //alert(data);
     var json='{"title":"url","url":"http://total0808.cafe24.com/dalgona/app/read.php?id='+id+'&flag='+flag+'&read='+read+'"}';
     window.parent.postMessage(json,"*");
+    if(id=='운영자'){
+      location.reload();
+    }
 	});
 }

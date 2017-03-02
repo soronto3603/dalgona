@@ -17,7 +17,9 @@
   <input type=hidden id=id value="<?=$_GET['id']?>">
   <input type=hidden id=read value="<?=$_GET['read']?>">
   <div id=header>
-    <p id=header_title>우리들의 달콤한 고민 나누기</p>
+    <img id=header_background src="img/gradient.png">
+    <img id=header_dalgona src="img/img_logo_90x120.png">
+    <p id=header_title>달고나</p>
   </div>
   <div id=content_box>
   <!--<div id=notice>
@@ -44,7 +46,7 @@
   </table>
   <table>
     <tr>
-      <td><img src="img/user.png" width="20px" height="20px"></td>
+      <td><img id=profile src="img/user.png" width="20px" height="20px"></td>
       <td><div style="height:40px;width:270px;display:inline-block">
         <input id=comment_input class="uy_input" type="text" placeholder="댓글을 입력해주세요." style="width:220px;display:inline-block;text-align:left;position:relative;top:-3px;">
       <div style="display:inline-block"><img id=comment_img src="img/next.png" onclick="update_comment()" style="width:20px;background-color:#f9f9f;margin:0px;padding:3px;position:relative;top:5px;margin-left:10px;"></div></div></td>

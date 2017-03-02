@@ -4,7 +4,7 @@
   margin:0px;
   padding:0px;
   color:#676767;
-	font-size:12px;
+	font-size:25px;
 	font-family: "Jeju Gothic",sans-serif;
 }
 div{
@@ -56,4 +56,8 @@ textarea{
   width: 80%;
   height: 120px;
   position: relative;
+}
+button{
+  margin:3px;
+  padding:5px;
 }

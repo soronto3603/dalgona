@@ -148,7 +148,7 @@ function setLoginStatus(id){
 //////////////////////////////ㅇdb관련모듈.
 function onBackKeyDown(){
   if(document.getElementById('iframe').src.indexOf("random_chat") != -1){
-    document.getElementById('iframe').src="http://total0808.cafe24.com/dalgona/app/main.php?id="+phon_n;
+    requestReadPermission();
   }else{
     send_message('backkey_down');
   }

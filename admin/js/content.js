@@ -6,7 +6,7 @@ function get_content_list(){
 	});
 }
 function init(){
-  get_content_list();
+  //get_content_list();
 }
 window.onload=init();
 function update_content(n){
@@ -39,6 +39,15 @@ function delete_content(n){
 }
 function open_content(n,j){
   var url="http://total0808.cafe24.com/dalgona/app/read.php?read="+n+"&flag="+j;
+  window.open(url);
+}
+function open_page(n){
+  if(n==1){
+    var url="http://total0808.cafe24.com/dalgona/app/talk_list_page.php?id=%EC%9A%B4%EC%98%81%EC%9E%90&flag=0";
+
+  }else if(n==2){
+    var url="http://total0808.cafe24.com/dalgona/app/talk_list_page.php?id=%EC%9A%B4%EC%98%81%EC%9E%90&flag=1";
+  }
   window.open(url);
 }
 function insert_content(){

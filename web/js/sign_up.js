@@ -2,13 +2,13 @@ var sex=1;
 var phone_number;
 
 function male(){
-  document.getElementById('male').style.backgroundColor="#99bbf4";
-  document.getElementById('female').style.backgroundColor="#c8c8c8";
+  document.getElementById('male_').src="img/button_male_257x79.png";
+  document.getElementById('female_').src="img/button_female_257x79_press.png";
   sex=0;
 }
 function female(){
-  document.getElementById('male').style.backgroundColor='#c8c8c8';
-  document.getElementById('female').style.backgroundColor="#f88978";
+  document.getElementById('male_').src="img/button_male_257x79_press.png";
+  document.getElementById('female_').src="img/button_female_257x79.png";
   sex=1;
 }
 var conf=0;
@@ -85,8 +85,8 @@ function submit(){
 	});
 }
 function init(){
-  document.getElementById('male').style.backgroundColor="#c8c8c8";
-  document.getElementById('female').style.backgroundColor="#f88978";
+  document.getElementById('male_').src="img/button_male_257x79_press.png";
+  document.getElementById('female_').src="img/button_female_257x79.png";
   phone_number=document.getElementById('phone_number').value;
 }
 window.onload=init();

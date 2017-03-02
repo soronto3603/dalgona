@@ -8,5 +8,8 @@
   <script type="text/javascript" src="js/content.js"></script>
 </head>
 <body id=content_box>
+  <h1 style="font-size:50px;">게시물 관리</h1>
+  <button onclick="open_page(1)" style="padding:20px;">달고나 게시판</button>
+  <button onclick="open_page(2)" style="padding:20px;">자유 게시판</button>
 </body>
 </html>

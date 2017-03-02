@@ -4,16 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/sign_up.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
 <body >
 
 <!-- Page content -->
-
+<div id=header>
+  <img id=header_background src="img/gradient.png">
+  <img id=header_dalgona src="img/img_logo_90x120.png">
+  <p id=header_title>회원가입</p>
+</div>
 <div class="uy-container" id="rooms">
   <center style="margin:0px">
-    <div style="width:100%;height:40px;background-color:white;border:0.01px solid #e9e9e9;border-right:none;border-left:none;border-top:none;">
-      <p style="color:#676767;text-align:center;margin:0px;position:relative;top:15px;display:block;font-size:16px;">회원 가입</p>
-    </div>
+
     <textarea id='text' readonly>제1조(목적) 이 약관은 OO 회사(전자상거래 사업자)가 운영하는 OO 사이버 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을 규정함을 목적으로 합니다.
 
   ※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」
@@ -256,41 +259,45 @@
   </center>
 
 </div>
-<div class="uy-content" style="max-width:1532px;">
+<div class="uy-content" style="max-width:1532px;position: fixed;bottom: 65px;">
   <input type=hidden id=phone_number value="<?=$_GET['phone_number']?>">
   <div class="uy-row-padding">
     <div class="uy-third" style="margin-top:-12px;">
-      <center style="margin-top:15px">
-        <img id=checkbox src="img/checkbox.png" onclick="check()" width="12px" height="12px" style="margin-top:3px;margin-right:10px"><label style="font-size: 14px;position: relative;top: -3px;">약관에 동의합니다.</label>
+      <center style="margin-top:18px">
+        <img id=checkbox src="img/checkbox.png" onclick="check()" width="15px" style="margin-top:3px;margin-right:10px"><label style="font-size: 14px;position: relative;top: -3px;">이용약관에 동의합니다.</label>
       </center>
     </div>
     <div class="uy-third">
       <center>
-        <p>성별</p>
-        <button id='male' onclick="male()" class="w3-btn gender" type="submit">남자</button>
-        <button id='female' onclick="female()" class="w3-btn gender" type="submit">여자</button>
+        <p style="position: relative;top: -18px;right:2px;">성별</p>
+        <!--<button id='male' onclick="male()" class="w3-btn gender" type="submit">남자</button>
+        <button id='female' onclick="female()" class="w3-btn gender" type="submit">여자</button>-->
+        <img id=male_ class=gender onclick="male();" src="img/button_male_257x79.png">
+        <img id=female_ class=gender onclick="female();" src="img/button_female_257x79.png">
       </center>
     </div>
     <div class="uy-third">
       <center>
-        <p>나이</p>
+        <p style="position: relative;top: 2px;">나이</p>
         <input id=age class="uy_input" type="text" maxlength="2" placeholder="나이를 입력해 주세요.">
       </center>
     </div>
-    <div class="uy-third">
-      <center>
-        <p style="margin-right:12px;">닉네임</p>
-        <input id=nickname onclick="overlap=0;" class="uy_input" type="text" maxlength="7" placeholder="최대 7글자" style="width:176px;">
-        <div class="w3-btn" style="margin-left:7px;width:40px;background-color:white;border-radius:3px;border:1px solid #FECB9B;color:black;font-size:8px;height:20px;" onclick="overlap_check()"><p style="display:block;margin-top:4px;">중복확인</p></div>
+    <div class="uy-third" style="border-bottom:0.5px solid #cccccc;">
+      <center style="margin:0px;">
+        <p style="margin-right:12px;    position: relative;top: -9px;left: -3px;">닉네임</p>
+        <input id=nickname onclick="overlap=0;" class="uy_input" type="text" maxlength="7" placeholder="최대 7글자" style="width:176px;position: relative;top: -9px;right:3px;">
+
+        <!--<div class="w3-btn" style="margin-left:7px;width:40px;background-color:white;border-radius:3px;border:1px solid #FECB9B;color:black;font-size:8px;height:20px;" onclick="overlap_check()"><p style="display:block;margin-top:4px;">중복확인</p></div>
+        -->
+        <img style="position: relative;top: 8px;" onclick="overlap_check()" width="80px" src="img/button_overlap_157x79.png">
       </center>
     </div>
   </div>
   <center>
-    <button class="w3-btn confirm" type="submit" onclick="submit()" style="background-color:#f88978">완료</button>
+    <div class="confirm" onclick="submit()"><img width="100%" src="img/button_save_696x114.png"></div>
   </center>
 <script type="text/javascript" src="js/sign_up.js"></script>
 <!-- End page content -->
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
 </html>

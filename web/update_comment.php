@@ -1,6 +1,6 @@
 <?php
   $read=$_POST['read'];
-  $comment=$_POST['comment'];
+  $comment=urlencode($_POST['comment']);
   $writer=$_POST['writer'];
   $flag=$_POST['flag'];
 
@@ -21,7 +21,10 @@
     $nickname=$row[0];
     $sex=$row[1];
   }
-
+  if($writer=="운영자"){
+    $nickname="운영자";
+    $sex="남자";
+  }
   $query="insert into dalgona_comment values($read,'$nickname','$sex','$comment',$flag,'$time',NULL)";
   $ret=mysqli_query($conn,$query);
 

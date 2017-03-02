@@ -16,31 +16,41 @@
   <input type=hidden id=flag value="<?=$_GET['flag']?>">
   <input type=hidden id=sort value="<?=$_GET['sort']?>">
   <div id=header>
-    <p id=header_title>달콤한 우리들의 고민 나누기</p>
-    <img src="img/gear.png" width="25px" height="25px" id=side_menu onclick="show_config()">
+    <img id=header_background src="img/gradient.png">
+    <img id=header_dalgona src="img/img_logo_90x120.png">
+    <p id=header_title>달고나</p>
+    <img src="img/gear.png" width="20px" height="20px" id=side_menu onclick="show_config()">
   </div>
   <div id=notice>
-    <!--<div style="margin-top:7px;">
-      <p style="float:left">공지</p>
-      <p id=notice_text>클럽에 남친을 보내면 안되는 이유</p>
+    <!--
+    <div style="background-color: #373433;width: 90%;height: 35px;margin: auto;margin-top: 7.5px;border-radius: 20px;">
+      <div style="position: relative;top: 7px;left: 10px;">
+        <p style="float:left;color:#ff4e4e;font-size:12px">공지</p>
+        <p id=notice_text>클럽에 남친을 보내면 안되는 이유</p>
+      </div>
     </div>-->
   </div>
-  <table id=content_table style="margin-top:70px;">
-    <!--
+  <table id=content_table style="margin-top:115px;">
+<!--
     <tr>
-      <td id=theme><div id=circle style="background-color:#ff7473">
-        <center><p id=circle_text class="charactor-size3">연애중</p></center>
-      </div></td>
-      <td><p style="font-size:14px">클럽에 남친을 보내면 안되는 이유</p><br><p style="font-size:9.5px;">뽀로뽕뽕 조회 5 추천 2</p></td>
-      <td id=time><p>오후 10:01</p></td>
+      <td id=theme>
+        <img height="30px" style="margin-left: 10px;" src="img/img_category_loving_118x50.png">
+      </td>
+      <td><p style="font-size:12px">클럽에 남친을 보내면 안되는 이유</p>
+        <br><p style="font-size:10px;">뽀로뽕뽕 조회 5 추천 2</p></td>
     </tr>
-  -->
+    <tr>
+      <td id=theme>
+        <img height="30px" style="margin-left: 10px;" src="img/img_category_marriagexdivorce_135x50.png">
+      </td>
+      <td><p style="font-size:12px">클럽에 남친을 보내면 안되는 이유</p>
+        <br><p style="font-size:10px;">뽀로뽕뽕 조회 5 추천 2</p></td>
+    </tr>-->
+
   </table>
   <div id=icon_box>
-    <img id=icon src="<?php if($_GET['sort']==""){echo "img/star.png";}else{echo "img/sort.png";}?>" onclick="change_sort()">
-    <span style="position: relative;bottom: 18px;left: 14px;color: #f9f9f9;font-size:7px"><?php if($_GET['sort']==""){echo "인기순";}else{echo "최신순";}?></span>
-    <img id=icon style="margin-top:10px;" src="img/pen.png" onclick="make_content()">
-    <span style="position: relative;bottom: 18px;left: 14px;color: #f9f9f9;font-size:7px">글쓰기</span>
+    <img id=icon src="img/btn_new_134x134.png" style="<?php if($_GET['sort']==""){}else{echo "opacity:0.5;";}?>" onclick="change_sort()">
+    <img id=icon style="margin-top:10px;" src="img/btn_write_134x134.png" onclick="make_content()">
   </div>
   <div id=ad_box>
 

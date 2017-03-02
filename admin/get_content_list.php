@@ -31,7 +31,8 @@
     <td><input id=writer".$row[0]." value='".$row[5]."'></td><td><input id=count".$row[0]." value='".$row[6]."'></td><td>$comment</td>
     <td><button onclick='update_content(".$row[0].")'>수정</button><button onclick='delete_content(".$row[0].")'>삭제</button><button onclick='open_content(".$row[0].",".$row[8].")'>게시물</button></td>
     </tr></table>";
-    echo "<div id=content_text><textarea id=content".$row[0]." style='height:120px'>".$row[4]."</textarea></div>";
+    $content=str_replace("<br>","\r\n",$row[4]);
+    echo "<div id=content_text><textarea id=content".$row[0]." style='height:120px'>".$content."</textarea></div>";
   }
 
 ?>

@@ -22,10 +22,13 @@
     $nickname=$row[0];
     $sex=$row[1];
   }
-
+  if($writer=="운영자"){
+    $nickname="운영자";
+    $sex="남자";
+  }
   $content=str_replace("\n","<br>",$content);
 
-  $query="insert into dalgona_content values(NULL,'$title','$theme','$time','$content','$nickname',0,0,$flag,'$sex')";
+  $query="insert into dalgona_content values(NULL,'".urlencode($title)."','$theme','$time','".urlencode($content)."','$nickname',0,0,$flag,'$sex')";
   $ret=mysqli_query($conn,$query);
 
   //while($row=mysqli_fetch_row($ret)){}

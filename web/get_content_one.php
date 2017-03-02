@@ -21,15 +21,15 @@
   while($row=mysqli_fetch_row($ret)){
     echo "
     <div id=notice>
-      <h3 id=title>".$row[1]."</h3>
+      <h3 id=title>".urldecode($row[1])."</h3>
     </div>
     <div> 작성자 : ".$row[5];
-    if($nickname==$row[5]){
+    if($nickname==$row[5] || $id=="운영자"){
       echo "<div style='font-size:9px;display:inline-block;float:right;color: #fa3e3e;' onclick='delete_content(".$row[0].")'>삭제하기</div><div style='display:inline-block;float:right;color:#3e5b99;margin-right:5px;font-size:9px;' onclick='update_content(".$row[0].")'>수정하기</div>";
     }
     echo "</div>
     <div id=content>
-        ".$row[4]."
+        ".urldecode($row[4])."
     </div>";
   }
 
