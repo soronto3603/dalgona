@@ -11,6 +11,11 @@ function init(){
 }
 window.onload=init();
 window.onmessage=function(e){
+  if(isclose==0){
+    isclose=1;
+    document.getElementById('ad2').style.display='none';
+    return ;
+  }
   var j=JSON.parse(e.data);
   //alert(j.title);
   if(j.title=="backkey_down"){

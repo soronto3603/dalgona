@@ -93,4 +93,8 @@ window.onload=init();
 
 // 수신 메세지
 window.onmessage=function(e){
+  var j=JSON.parse(e.data);
+  if(j.title=="backkey_down"){
+    window.parent.postMessage("exit_app","*");
+  }
 }

@@ -20,7 +20,7 @@ function ad(u){
     $number+=$row[1];
     $odd_list[$row[0]]=$row[1];
   }
-  $odd=rand(0,$number);
+  $odd=rand(1,$number);
   foreach($odd_list as $k=>$v){
     $odd-=$v;
     if($odd<=0){

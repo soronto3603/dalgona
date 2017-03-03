@@ -49,7 +49,7 @@
 
   </table>
   <div id=icon_box>
-    <img id=icon src="img/btn_new_134x134.png" style="<?php if($_GET['sort']==""){}else{echo "opacity:0.5;";}?>" onclick="change_sort()">
+    <img id=icon src="<?php if($_GET['sort']==""){echo "img/btn_new_134x134.png";}else{echo "img/btn_hot_134x134.png";}?>" onclick="change_sort()">
     <img id=icon style="margin-top:10px;" src="img/btn_write_134x134.png" onclick="make_content()">
   </div>
   <div id=ad_box>

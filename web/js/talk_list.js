@@ -42,6 +42,11 @@ function make_content(){
 }
 // 수신 메세지
 window.onmessage=function(e){
+  if(isclose==0){
+    isclose=1;
+    document.getElementById('ad2').style.display='none';
+    return ;
+  }
   id=document.getElementById('id').value;
   var j=JSON.parse(e.data);
   if(j.title=="backkey_down"){
