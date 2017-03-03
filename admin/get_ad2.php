@@ -16,7 +16,7 @@
         <input type=submit value='이미지업로드' class=btn>
       </form>
       url　<input type=text id=url".$row[0]." class=url value='".$row[2]."'>
-      확률<input type=text id=odd".$row[0]." class=url value='".$row[3]."'>
+      확률 ( 0~100 )<input type=text id=odd".$row[0]." class=url value='".$row[3]."'>
       <button onclick='update(".$row[0].")'>수정</button>
       <button onclick='delete_ad2(".$row[0].")'>삭제</button>
     </div>";

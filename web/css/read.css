@@ -1,9 +1,8 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
 *{
 	color:#676767;
 	font-size:12px;
-	@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-	font-family: "Noto Sans KR",sans-serif;
+	font-family: 'Jeju Gothic', serif;
 }
 p{
 	font-size:14px;
@@ -18,7 +17,7 @@ p{
 	border-bottom:none;width:100%;height:65px;background-color:white;margin-bottom:3px;
 }
 #header_title{
-	top:15px;color:#f9f9f9;text-align:left;margin:0px;position:relative;display:block;font-size:24px;
+	top:22px;color:#f9f9f9;text-align:left;margin:0px;position:relative;display:block;font-size:24px;
   left:70px;
 }
 #header_background{

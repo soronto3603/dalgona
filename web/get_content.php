@@ -52,11 +52,17 @@
     while($row1=mysqli_fetch_row($ret1)){
       $comment=$row1[0];
     }
+    $color="";
+    if($row[9]=="남자"){
+      $color="color:#4fb3ef;";
+    }else{
+      $color="color:#ff4f4f;";
+    }
     echo "<tr onclick='read_content(".$row[0].")'>
       <td id=theme>
         <img height='30px' style='margin-left: 10px;' src='img/".$theme_list[$row[2]]."'>
       </td>
-      <td><p style='font-size:12px'>".urldecode($row[1])."</p><br><p style='font-size:10px;'>".$row[5]."　|　조회<font style='color:#ff986a'>".$row[6]."</font>　|　댓글<font style='color:#ff986a'>".$comment."</font></p></td>
+      <td><p style='font-size:12px'>".urldecode($row[1])."</p><br><p style='font-size:10px;'><font style='font-size:10px;$color'>".$row[5]."</font>　|　조회<font style='color:#ff986a;margin-left:3px;'>".$row[6]."</font>　|　댓글<font style='color:#ff986a;margin-left:3px;'>".$comment."</font></p></td>
     </tr>";
   }
 

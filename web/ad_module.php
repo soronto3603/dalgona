@@ -20,7 +20,9 @@ function ad(u){
     $number+=$row[1];
     $odd_list[$row[0]]=$row[1];
   }
-  $odd=rand(1,$number);
+  $odd=rand(1,100);
+  $query="";
+  if($odd ==0)return ;
   foreach($odd_list as $k=>$v){
     $odd-=$v;
     if($odd<=0){
@@ -28,8 +30,14 @@ function ad(u){
       break;
     }
   }
+
+  if($query==""){
+    echo "<script>isclose=1</script>";
+    return ;
+  }
   $ret=mysqli_query($conn,$query);
   while($row=mysqli_fetch_row($ret)){
+    if($row[1]=="0")break;
     echo "<div id=ad2 style='z-index:100;position:fixed;top:0px;width:100%;height:100%;background-color:black;' onclick='ad(\"".$row[2]."\")'>
     <img src='img/close.png' style='position: fixed;right: 10px;top: 10px;width: 50px;' onclick='isclose=1;document.getElementById(\"ad2\").style.display=\"none\";'>
     <center style='width:100%;height:100%;margin:0px;padding:0px'>

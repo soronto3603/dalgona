@@ -1,9 +1,7 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 *{
 	margin:0px;
-	font-family: "Noto Sans KR",sans-serif;
+	font-family: 'Jeju Gothic', serif;
 }
 a{ text-decoration:none;color:black;font-size:25px}
 .button {
@@ -46,7 +44,7 @@ body{
 	border-bottom:none;width:100%;height:65px;background-color:white;margin-bottom:3px;
 }
 #header_title{
-	top:18px;color:#f9f9f9;text-align:left;margin:0px;position:relative;display:block;font-size:24px;
+	top:22px;color:#f9f9f9;text-align:left;margin:0px;position:relative;display:block;font-size:24px;
   left:70px;
 	margin:0px;
 	padding:0px;
