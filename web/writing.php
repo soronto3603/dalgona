@@ -34,6 +34,9 @@
     <img id=header_background src="img/gradient.png">
     <img id=header_dalgona src="img/img_logo_90x120.png">
     <p id=header_title>글쓰기</p>
+    <?php
+      echo $_GET['id'];
+    ?>
   </div>
   <div id=notice>
     <!--
