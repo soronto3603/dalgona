@@ -1,0 +1,55 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-sim": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.hume.dalgona"
+        },
+        "cordova-plugin-sqlite-2": {
+            "PACKAGE_NAME": "com.hume.dalgona"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.hume.dalgona"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.hume.dalgona"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.hume.dalgona"
+        },
+        "com.borismus.webintent": {
+            "PACKAGE_NAME": "com.hume.dalgona"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.hume.dalgona"
+        },
+        "cordova-plugin-admob-free": {
+            "PACKAGE_NAME": "com.hume.dalgona"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.hume.dalgona"
+        },
+        "cordova-promise-polyfill": {
+            "PACKAGE_NAME": "com.hume.dalgona"
+        },
+        "cordova-admob-sdk": {
+            "PACKAGE_NAME": "com.hume.dalgona"
+        }
+    }
+}

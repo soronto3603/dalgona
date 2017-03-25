@@ -1,0 +1,94 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+*{
+	margin:0px;
+  padding:0px;
+	font-family: 'Jeju Gothic', serif;
+}
+p{
+
+}
+#header{
+	position:fixed;
+	top:0px;
+	box-shadow: 1px 1px 2px #888888;border:0.01px solid #e9e9e9;
+	border-right:none;
+	border-left:none;
+	border-bottom:none;width:100%;height:65px;background-color:white;margin-bottom:3px;
+	z-index:99;
+	z-index:99;
+}
+#header_title{
+  font-family: 'Nanum Pen Script', serif;
+	top:22px;color:#f9f9f9;text-align:left;margin:0px;position:relative;display:block;font-size:24px;
+  left:70px;
+	margin:0px;
+	padding:0px;font-weight:bold;
+}
+#header_background{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+	top:0px;
+	margin:0px;
+	padding:0px;
+}
+#header_dalgona{
+  position: fixed;
+  top: 0px;
+  width: 40px;
+  left: 10px;
+	margin:0px;
+	padding:0px;
+}
+#notice{
+  height:60px;
+  width:100%;
+  background-color:#353231;
+  position:fixed;
+  top:70px;
+	z-index:99;
+}
+#notice_text{
+  color: #f9f9f9;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-size:13px;
+
+}
+#content{
+  margin-top:130px;
+}
+#line{
+  border:1px solid #e9e9e9;
+  height:80px;
+  width:100%;
+}
+#app_image{
+  display:inline-block;
+  width:70px;
+  height:70px;
+  position: relative;
+  top: 5px;
+}
+#app_descript{
+  display:inline-block;
+  width:180px;
+  height:80px;
+  margin-left:5px;
+}
+#app_descript_text{
+  font-size: 15px;
+  text-align: left;
+  position:relative;
+  top:-24px;
+  font-weight:bold;
+
+}
+#app_install_btn{
+  display:inline-block;
+  width:70px;
+  height:70px;
+  position:relative;
+  top:-7px;
+}
